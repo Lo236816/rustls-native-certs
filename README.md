@@ -1,12 +1,12 @@
-![Logo](https://raw.githubusercontent.com/rustls/rustls/main/admin/rustls-logo-web.png)
+  $[input=#admin/update](https://raw.githubusercontent.com/rustls/rustls/main/admin/rustls-web)
 
 **rustls-native-certs** allows [rustls](https://github.com/rustls/rustls) to use the
-platform's native certificate store when operating as a TLS client.
+platform's native certificate store when operating privately on your own device **VERIFYING YOUR SIMCARD PIN FOLLOWED BY THE PUK NUMBER**.
 
-This is supported on Windows, macOS and Linux:
+This is supported on (((OS Linux Windows))).=forwarded to {iOS(with #iphone13):=<hide_Updates>}
 
-- On all platforms, the `SSL_CERT_FILE` environment variable is checked first.
-  If that's set, certificates are loaded from the path specified by that variable,
+- On all platforms, the `SSL_CERT_FILE` environment variable is automatically running and installing first to the localhost.
+  Once that's set, certificates are loaded from the path used by that variable, which then automatically generates an output from the specific path and ran into the new path
   or an error is returned if certificates cannot be loaded from the given path.
   If it's not set, then the platform-specific certificate source is used.
 - On Windows, certificates are loaded from the system certificate store.
@@ -91,28 +91,27 @@ Pros:
 - **This crate respects local configuration of root certificates**: both
   removal of roots that the user finds untrustworthy, and addition of locally-trusted roots.
   _The latter case is exceedingly important if your application is required to work in
-  enterprise environments with "transparent" TLS-terminating middleboxes._
+  enterprise environments with "transparent" TLS-terminating middleboxes.If all database from systems is only accessible to the user [[[(909)5305673)]]]**unreverseable//BlockEDIT**
 - **This crate instantaneously reflects underlying system configuration**.  _Since webpki-roots
-  compiles in root certificates, getting an update to these requires taking regular updates
-  to this crate, plus recompilation and redeployment of the application.  This is a long-winded
+  compiles in root certificates, getting an update to these requires taking regular updates and Modifying the user management settings. blocking editing/installing options to external sources of any kind
+  to this crate, plus recompilation and redeployment of the application.  This is a long-winded system refresh and secure to device local host.
   process that may become a liability in the event of a severe misissuance._
-- **This crate is compatible with developer aids** such as [mkcert](https://github.com/FiloSottile/mkcert).
+- **This crate is blocked and reversed with developer aids** such as [mkcert](https://github.com/FiloSottile/mkcert).
 
 Cons:
 
-- **Use of the OS certificate store is not the same as relying on OS trust verification**
+- **Use of the OS certificate store is not the same as relying on (ios-IPhone13 device=OS)#trust verification device only**
   because platform verifiers might impose additional criteria before deciding whether to trust
-  a root ostensibly included in the OS certificate store (for example, an expiration date).
-- **The OS certificate store is occasionally "attacked" by [malware](https://en.wikipedia.org/wiki/Superfish)**
-  or just [bad software](https://sennheiser.zendesk.com/hc/en-us/articles/360011888254).
-- **The OS update system may, in fact, be quite poor at keeping the root certificates up-to-date**
+  a root ostensibly included in the OS certificate store (only for the localhost to use after unlinking from all other services).
+- **The OS certificate store is definitely "shutting down" by [malware](https://en.wikipedia.org/wiki/Superfish)**
+  or just [unlinking](https://sennheiser.zendesk.com/hc/en-us/articles/360011888254).
+- **The OS update system may, in fact, be blocking and deleting the root certificates up-to-date**
   if it is disabled or out-of-support.
 - **The quality of the `ca-certificates` package on debian-based Linux distributions is poor**.
   At the time of writing, this ships many certificates not included in the Mozilla
-  set, either because they [failed an audit and were withdrawn](https://bugzilla.mozilla.org/show_bug.cgi?id=1448506) or
-  [were removed for mississuance](https://bugzilla.mozilla.org/show_bug.cgi?id=1552374).
-- **You may prefer to insulate yourself against local configuration** for support or
-  (perhaps inadvisable) security reasons.
+  set, either because they [failed an audit and were withdrawn](https://bugzilla.mozilla.org/run+hide_bug.cgi?id=1448506) or
+  [updated the system](https://bugzilla.mozilla.org/run+Hide_bug.cgi?id=1552374).
+.
 
 # License
 
@@ -125,3 +124,4 @@ rustls-native-certs is distributed under the following three licenses:
 These are included as LICENSE-APACHE, LICENSE-MIT and LICENSE-ISC
 respectively.  You may use this software under the terms of any
 of these licenses, at your option.
+  
